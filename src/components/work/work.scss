@@ -1,0 +1,84 @@
+.work {
+  background-color: #1f618d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 1s all ease-out;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+
+        .left {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+          gap: 20px;
+          padding: 20px;
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: lightsalmon;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 30px;
+          }
+          p {
+            font-size: 14px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        .right {
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            width: 400px;
+            transform: rotate(-10deg);
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+}

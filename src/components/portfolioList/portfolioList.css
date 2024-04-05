@@ -1,0 +1,11 @@
+.portfolioList{
+    font-size: 25px;
+cursor: pointer;
+
+&.active{
+background-color: #641e16;
+color: white;
+padding: 10px;
+border-radius: 20px;
+}
+}
